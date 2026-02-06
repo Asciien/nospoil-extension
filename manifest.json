@@ -1,0 +1,29 @@
+{    
+    "manifest_version": 3,
+    "name": "NoSpoil",
+    "version": "0.1",
+    "description": "Browser extension that hides spoiler keywords on video platforms and social networks.",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "action" : {
+        "default_popup": "popup.html",
+        "default_icon": "icons/icon.png"
+    },
+    "content_scripts" : [
+        {
+            "matches": [
+                "https://www.youtube.com/*",
+                "https://www.facebook.com/*",
+                "https://www.twitter.com/*",
+                "https://www.instagram.com/*",
+                "https://www.reddit.com/*",
+                "https://x.com/*"
+            ],
+            "js": ["content.js"],
+            "css": ["content.css"]
+        }
+    ]
+}
