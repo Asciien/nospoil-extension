@@ -15,12 +15,7 @@
     "content_scripts" : [
         {
             "matches": [
-                "https://www.youtube.com/*",
-                "https://www.facebook.com/*",
-                "https://www.twitter.com/*",
-                "https://www.instagram.com/*",
-                "https://www.reddit.com/*",
-                "https://x.com/*"
+                "https://www.youtube.com/*"
             ],
             "js": ["content.js"],
             "css": ["content.css"]
