@@ -42,7 +42,7 @@ header {
 }
 
 /* Style quand le bouton est actif */
-.powerbtn.active {
+.actualStatus {
     background-color: #333;
     color: white;
     border-color: #333;
